@@ -1,0 +1,14 @@
+/*======================== Generic <T> =============================
+ * */
+package generics;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyCustomClass1<String> list1 = new MyCustomClass1<>();
+		MyCustomClass1<Integer> list2 = new MyCustomClass1<>();
+		
+	}
+
+}

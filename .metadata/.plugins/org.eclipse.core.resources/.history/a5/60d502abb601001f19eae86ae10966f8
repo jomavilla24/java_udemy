@@ -1,0 +1,25 @@
+/* ========================= Navigable Map and TreeMap ========================
+ * The class TreeMap is the only class of the ones we've seen so far that implements
+ * the Navigable Map interface. Because of this TreeMaps offer additional methods
+ * not present in the other Maps seen so far.
+ * */
+
+package TreeMap_NavigableMap;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Creates a new tree map
+		TreeMap<String, Integer> myTree = new TreeMap<>(Map.of(
+				"a", 10, "b", 20, "c", 30));
+		
+		// The higherKey(k) method returns the key that is higher that k. If no key higher
+		// than k exist in the tree null is returned
+		System.out.println(myTree.higherKey("a")); // b
+		System.out.println(myTree.higherKey("c")); // null
+	}
+
+}

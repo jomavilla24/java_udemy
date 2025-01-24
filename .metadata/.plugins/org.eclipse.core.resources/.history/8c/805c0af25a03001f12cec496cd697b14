@@ -1,0 +1,27 @@
+/*======================== Generic <T> =============================
+ * */
+package generics;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Create 2 objects of the custom class we have created. 
+		MyCustomClass1<String> list1 = new MyCustomClass1<>();
+		MyCustomClass1<Integer> list2 = new MyCustomClass1<>();
+		
+		// Now we can call the custom methods
+		list1.addElement("Hello");
+		list1.addElement("World");
+		list1.addElement("Again");
+		
+		list2.addElement(10);
+		list2.addElement(20);
+		list2.addElement(30);
+		
+		System.out.println(list1.toString()); // Hello|World|Again|
+		System.out.println(list2.toString()); // 10|20|30|
+		
+		
+	}
+
+}
